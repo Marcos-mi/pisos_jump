@@ -1034,12 +1034,12 @@ pre code {
 
 }
 .btn-whatsapp{
-  right: 4px !important;
+  right: 5px !important;
   width: 50px !important;
   height: 40px !important;
 } 
 .fa-whatsapp{
-  font-size: 23px !important;
+  font-size: 20px !important;
   color: white;
 }
 
@@ -9691,18 +9691,20 @@ h6,
 .btn-whatsapp{
   width: 55px;
   height: 20px;
-  color: white;
   padding: 15px 0 20px 0;
   text-align: center;
   position: fixed;
   right:70px;
   bottom: 0px;
-  background-color: #FDAC53;
+  background-color: #232322;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   right: 100px ;
 }
 .fa-whatsapp{
   font-size: 20px;
-  color: white;
+  color: #F6A24B;
+}
+.back-to-top{
+  margin-bottom: 40px;
 }
