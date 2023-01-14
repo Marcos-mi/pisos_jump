@@ -609,12 +609,14 @@ pre code {
   .container, .container-sm {
     max-width: 540px;
   }
+  
 }
 
 @media (min-width: 768px) {
   .container, .container-sm, .container-md {
     max-width: 720px;
   }
+
 }
 
 @media (min-width: 992px) {
@@ -1029,6 +1031,15 @@ pre code {
   .offset-sm-11 {
     margin-left: 91.66667%;
   }
+}
+.btn-whatsapp{
+  right: 4px !important;
+  width: 50px !important;
+  height: 40px !important;
+} 
+.fa-whatsapp{
+  font-size: 23px !important;
+  color: white;
 }
 
 @media (min-width: 768px) {
