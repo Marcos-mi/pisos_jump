@@ -1,3 +1,6 @@
+<?php
+$pg = "inicio";
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -16,24 +19,7 @@
 </head>
 
 <body>
-    <div class="container-fluid nav-bar p-0">
-        <div class="container-lg p-0">
-            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark">
-                <h1 class="m-0 text-white display-4"><span class="text-primary">P</span>isos<span class="text-primary">J</span>ump</h1>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto py-0">
-                        <a href="#" class="nav-item nav-link active">Inicio</a>
-                        <a href="nosotros.html" class="nav-item nav-link">Nosotros</a>
-                        <a href="servicios.html" class="nav-item nav-link">Servicios</a>
-                        <a href="contacto.html" class="nav-item nav-link">Contacto</a>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </div>
+    <?php include_once"menu.php" ?> 
     <div class="container-fluid page-header d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5 mb-5">
         <h1 class="display-4 text-white mb-3 mt-0 mt-lg-5">Pisos y revestimientos</h1>
         <h1 class="display-3 text-white mb-md-4">Aplicación de revestimientos cementicios, epoxicos y pisos industriales</h1>
@@ -179,71 +165,19 @@
             </div>
         </div>
     </div>
-  
-   
-   
-
-    <div class="container-fluid bg-secondary text-white mt-5 pt-5 px-sm-3 px-md-5">
-        <div class="row pt-5">
-            <div class="col-lg-3 col-md-6 mb-5">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="m-0 mt-n2 text-white display-4"><span class="text-primary">P</span>isos<span class="text-primary">J</span>ump</h1>
-                </a>
-                <p>Microcementos,
-                    Porcelanato líquido,
-                    Poliuretanos,
-                    impermeabilizaciones,
-                    Todo tipo de pisos decorativos e industriales 👷🏻‍♂️</p>
-                <div class="d-flex justify-content-start mt-4">
-                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://www.facebook.com/profile.php?id=100063782423282" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" target="_blank" style="width: 38px; height: 38px;" href="https://www.instagram.com/pisosjump/"><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0" style="width: 38px; height: 38px;" href="https://api.whatsapp.com/send?phone=541159275923" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="font-weight-bold text-primary mb-4">Accesos rápidos</h5>
-                <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Inicio</a>
-                    <a class="text-white mb-2" href="nosotros.html"><i class="fa fa-angle-right text-primary mr-2"></i>Nosotros</a>
-                    <a class="text-white mb-2" href="servicios.html"><i class="fa fa-angle-right text-primary mr-2"></i>Servicios</a>
-                  
-                    <a class="text-white" href="contacto.html"><i class="fa fa-angle-right text-primary mr-2"></i>Contacto</a>
-                </div>
-            </div>  
-            <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="font-weight-bold text-primary mb-4">Contacto</h5>
-                <p>Por cualquier consulta, no dude en comunicarse con nosotros.</p>
-                <p><i class="fa fa-map-marker-alt text-primary mr-2"></i>Buenos Aires, Argentina</p>
-                <p><i class="fa fa-phone-alt text-primary mr-2"></i>1159275923</p>
-                <p><i class="fa fa-envelope text-primary mr-2"></i>pisosjump@gmail.com</p>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid py-4 px-sm-3 px-md-5">
-        <p class="m-0 text-center">
-            &copy; <a class="font-weight-semi-bold" href="#">Copyright</a> Pagina creada por
-            <a class="font-weight-semi-bold" href="https://www.linkedin.com/in/marcos-mi%C3%B1o/" target="_blank">Marcos Miño</a> &  
-            <a class="font-weight-semi-bold" href="https://www.linkedin.com/in/juan-yovera/" target="_blank">Juan Yovera</a>
-        </p>
-    </div>
+    <?php include_once"footer.php" ?> 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script>
 
- 
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
 
-    
-    <script src="js/main.js"></script>
-</body>
-    <div class="btn-whatsapp ">
-        <a href="https://api.whatsapp.com/send?phone=541159275923"   target="_blank" title="Whatsapp" ><i class="fa-brands fa-whatsapp"></i></a>
-    </div>
+<script src="js/main.js"></script>
 
 </html>
