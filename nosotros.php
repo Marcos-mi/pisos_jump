@@ -17,6 +17,7 @@ $pg = "nosotros";
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a9448b5173.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/logo_dos.ico" type="image/x-icon">
 
 </head>
 
@@ -43,7 +44,7 @@ $pg = "nosotros";
                     <p class="mb-4">
                         Pisos Jump es una empresa dedicada a la aplicación de Pisos de poliuretano hace más de 20 años. Este es un material polivalente y de muchas ventajas a la hora de comenzar una obra, su bajo espesor y su gran adherencia permite aplicarlo sobre casi cualquier soporte sin tener que pasar por las molestias de una reforma convencional. Su estetica continua y minimalista lo convierten en un material de tendencia en el interiorismo actual. Nos caracterizamos por nuestro compromiso a la excelencia en nuestro trabajo y a un trato cordial con el cliente. Ofrecemos presupuestos sin cargo en el menor tiempo posible, no dude en consultar!
                     </p>
-                    <a href="servicios.html" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">Leer más</a>
+                    <a href="servicios.php" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">Leer más</a>
                 </div>
             </div>
             <div class="row mt-4">
@@ -92,7 +93,7 @@ $pg = "nosotros";
                         <p class="font-weight-semi-bold mb-2"><i class="fa fa-angle-right text-primary mr-2"></i>Impermeabilizaciones</p>
                         <p class="font-weight-semi-bold mb-2"><i class="fa fa-angle-right text-primary mr-2"></i>Pisos de poliuretano</p>
                     </div>
-                    <a href="servicios.html" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">Leer más</a>
+                    <a href="servicios.php" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">Leer más</a>
                 </div>
                 <div class="col-lg-6">
                     <div class="row">

@@ -17,6 +17,7 @@ $pg = "servicios";
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a9448b5173.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/logo_dos.ico" type="image/x-icon">
 
 </head>
 

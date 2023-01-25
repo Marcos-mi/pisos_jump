@@ -18,11 +18,11 @@
             <div class="col-lg-3 col-md-6 mb-5">
                 <h5 class="font-weight-bold text-primary mb-4">Accesos rápidos</h5>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-white mb-2" href="#"><i class="fa fa-angle-right text-primary mr-2"></i>Inicio</a>
-                    <a class="text-white mb-2" href="nosotros.html"><i class="fa fa-angle-right text-primary mr-2"></i>Nosotros</a>
-                    <a class="text-white mb-2" href="servicios.html"><i class="fa fa-angle-right text-primary mr-2"></i>Servicios</a>
+                    <a class="text-white mb-2 <?php echo ($pg == "inicio")? "active": ""; ?>" href="index.php"><i class="fa fa-angle-right text-primary mr-2"></i>Inicio</a>
+                    <a class="text-white mb-2 <?php echo ($pg == "nosotros")? "active": ""; ?>"  href="nosotros.php"><i class="fa fa-angle-right text-primary mr-2"></i>Nosotros</a>
+                    <a class="text-white mb-2 <?php echo ($pg == "servicios")? "active": ""; ?>" href="servicios.php"><i class="fa fa-angle-right text-primary mr-2"></i>Servicios</a>
                   
-                    <a class="text-white" href="contacto.html"><i class="fa fa-angle-right text-primary mr-2"></i>Contacto</a>
+                    <a class="text-white <?php echo ($pg == "contacto")? "active": ""; ?>" href="contacto.php"><i class="fa fa-angle-right text-primary mr-2"></i>Contacto</a>
                 </div>
             </div>  
             <div class="col-lg-3 col-md-6 mb-5">
