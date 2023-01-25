@@ -1,9 +1,46 @@
 <?php
+ini_set("display_errors", 1);
+ini_set("display_startup_errors",1);
+error_reporting(E_ALL);
 $pg = "contacto";
 
 
 
+if($_POST){
+    if($_POST){
+        $nombre = $_POST["txtNombre"];
+        $correo = $_POST["txtCorreo"];
+        $asunto = $_POST["txtAsunto"];
+        $mensaje = $_POST["txtMensaje"];
+    
+        // Varios destinatarios
+        $para = "pisosjump@gmail.com";
+        $titulo = 'Recibiste un mensaje desde tu Web';
+    
+        // mensaje
+        $cuerpo = "
+        Nombre: $nombre <br>
+        Correo: $correo <br>
+        Telefono: $asunto <br>
+        Mensaje: $mensaje
+        ";
+    
+        // Para enviar un correo HTML, debe establecerse la cabecera Content-type
+        $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+        $cabeceras .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
+    
+        // Cabeceras adicionales
+        $cabeceras .= 'To: info@pisosjump.com' . "\r\n";
+        $cabeceras .= 'From: info@pisojump.com' . "\r\n";
+    
+        // Enviarlo
+        mail($para, $titulo, $cuerpo, $cabeceras);
+        header("Location: index.php");
+    }
+}
+
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -26,7 +63,7 @@ $pg = "contacto";
     <div class="container-fluid page-header d-flex flex-column align-items-center justify-content-center pt-0 pt-lg-5 mb-5">
         <h1 class="display-4 text-white mb-3 mt-0 mt-lg-5">Contacto</h1>
         <div class="d-inline-flex text-white">
-            <p class="m-0"><a class="text-white" href="index.html">Inicio</a></p>
+            <p class="m-0"><a class="text-white" href="index.php">Inicio</a></p>
             <p class="m-0 px-2">/</p>
             <p class="m-0">Contacto</p>
         </div>
@@ -63,33 +100,33 @@ $pg = "contacto";
                         </div>
                     </div>
                     <div class="col-md-7">
+
                         <div class="contact-form">
-                            <div id="success"></div>
-                            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <form  method="post">
                                 <div class="form-row">
                                     <div class="col-md-6">
                                         <div class="control-group">
-                                            <input type="text" class="form-control p-4" id="name" placeholder="Nombre" required="required" data-validation-required-message="Ingresé su nombre" />
+                                            <input type="text" class="form-control p-4" id="txtNombre" name="txtNombre" placeholder="Nombre" required="required" data-validation-required-message="Ingresé su nombre" />
                                             <p class="help-block text-danger"></p>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="control-group">
-                                            <input type="email" class="form-control p-4" id="email" placeholder="Correo electrónico" required="required" data-validation-required-message="Ingresé su correo electronico" />
+                                            <input type="email" class="form-control p-4" id="txtCorreo" name="txtCorreo" placeholder="Correo electrónico" required="required" data-validation-required-message="Ingresé su correo electronico" />
                                             <p class="help-block text-danger"></p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="control-group">
-                                    <input type="text" class="form-control p-4" id="subject" placeholder="Asunto" required="required" data-validation-required-message="Ingresé el asunto" />
+                                    <input type="text" class="form-control p-4" id="txtAsunto" placeholder="Asunto" name="txtAsunto" required="required" data-validation-required-message="Ingresé el asunto" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group">
-                                    <textarea class="form-control" rows="5" id="message" placeholder="Mensaje" required="required" data-validation-required-message="Escriba su mensaje"></textarea>
+                                    <textarea class="form-control" rows="5" id="txtMensaje" placeholder="Mensaje"  name="txtMensaje" required="required" data-validation-required-message="Escriba su mensaje"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div>
-                                    <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;" type="submit" id="sendMessageButton">Enviar Mensaje</button>
+                                    <button class="btn btn-primary font-weight-semi-bold px-4" style="height: 50px;" type="submit" id="btnEnviar" name="btnEnviar">Enviar Mensaje</button>
                                 </div>
                             </form>
                         </div>
@@ -108,11 +145,6 @@ $pg = "contacto";
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-   
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
 
     <script src="js/main.js"></script>
 </body>

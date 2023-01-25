@@ -26,7 +26,7 @@ $pg = "inicio";
         <h1 class="display-4 text-white mb-3 mt-0 mt-lg-5">Pisos y revestimientos</h1>
         <h1 class="display-3 text-white mb-md-4">Aplicación de revestimientos cementicios, epoxicos y pisos industriales</h1>
         <div class="d-inline-flex text-white">
-            <p class="m-0 display-3"><a class="text-white" href="index.html">Bienvenido </a></p>
+            <p class="m-0 display-3"><a class="text-white" href="index.php">Bienvenido </a></p>
         </div>
     </div>
 
@@ -71,7 +71,7 @@ $pg = "inicio";
                     <small class="bg-primary text-white text-uppercase font-weight-bold px-1">¿Qué hacemos?</small>
                     <h1 class="mt-2 mb-3">¿Qué ofrecemos?<h1/>
                     <h4 class="font-weight-normal text-muted mb-4">Microcementos, Porcelanato líquido, Poliuretanos, Todo tipo de pisos decorativos e industriales 👷🏻‍♂️</h4>
-                    <a href="servicios.html" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">Descrubre más</a>
+                    <a href="servicios.php" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">Descrubre más</a>
                 </div>
                 <div class="col-lg-8">
                     <div class="row">
@@ -134,7 +134,7 @@ $pg = "inicio";
                         <p class="font-weight-semi-bold mb-2"><i class="fa fa-angle-right text-primary mr-2"></i>Impermeabilizaciones</p>
                         <p class="font-weight-semi-bold mb-2"><i class="fa fa-angle-right text-primary mr-2"></i>Pisos de poliuretano</p>
                     </div>
-                    <a href="servicios.html" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">Leer más</a>
+                    <a href="servicios.php" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold">Leer más</a>
                 </div>
                 <div class="col-lg-6">
                     <div class="row">
